@@ -27,7 +27,7 @@ url: "https://shella688.github.io/" # the base hostname & protocol for your site
 github_username:  ob903
 
 # Build settings
-theme: midnight
+theme: minima
 plugins:
   - jekyll-feed
 

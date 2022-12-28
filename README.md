@@ -17,6 +17,5 @@ This is a notes page for future me
 
 
 TODO:
-- change from minima to a dark theme
-    - (https://jekyllrb.com/docs/themes/)
+- get navigation bar integrated to rest of site as opposed to. wahtever the hel lI have currently
 - add more risks to risk assessment (unrelated to site just needs doing)

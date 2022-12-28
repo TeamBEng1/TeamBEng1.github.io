@@ -1,0 +1,6 @@
+- name: Home
+  link: /
+- name: The Game
+  link: /the-game.html
+- name: Deliverables
+  link: /deliverables.html

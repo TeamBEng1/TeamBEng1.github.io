@@ -18,13 +18,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: TeamB
+title: Piazza Panic
 email: ob903@york.ac.uk
 description: >- # this means to ignore newlines until "baseurl:"
-  Piazza Panic, a game about making food, avoiding customers, and winning
+  A game about making food, avoiding customers, and winning; by Team B
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://github.com/shella688/Piazza-Panic-Team18.git" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  ob903
+github:
+  repository_url: "https://github.com/shella688/Piazza-Panic-Team18"
+  zip_url: "https://github.com/shella688/Piazza-Panic-Team18/archive/refs/heads/main.zip"
 show_downloads: true
 
 # Build settings

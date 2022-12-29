@@ -17,5 +17,6 @@ This is a notes page for future me
 
 
 TODO:
-- get navigation bar integrated to rest of site as opposed to. wahtever the hel lI have currently
+- update download links with files once they're done
+- Gantt chart updates
 - add more risks to risk assessment (unrelated to site just needs doing)

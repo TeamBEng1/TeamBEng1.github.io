@@ -17,6 +17,7 @@ This is a notes page for future me
 
 
 TODO:
+- Make sure sitemap has links to all pages
 - update download links with files once they're done
 - Gantt chart updates
 - add more risks to risk assessment (unrelated to site just needs doing)

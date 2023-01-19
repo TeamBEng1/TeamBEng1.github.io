@@ -21,5 +21,6 @@ This is a notes page for future me
 TODO:
 - Make sure sitemap has links to all pages
 - update download links with files once they're done
+    - Risk + Req may need updates
 - Gantt chart updates
 

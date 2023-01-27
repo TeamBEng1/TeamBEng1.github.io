@@ -1,5 +1,3 @@
-ob903 is also shella688 
-
 To run and edit this site you'll need:
 - Ruby v2.5.0 or higher
     - (using Ruby v3.0.0 or higher will mean you also need to add webrick to dependencies)

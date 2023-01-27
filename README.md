@@ -8,19 +8,4 @@ To run and edit this site you'll need:
 
 (See this link for more https://jekyllrb.com/docs/installation/#requirements )
 
-- `bundle exec jekyll serve` to run site locally, then go to localhost:4000
-
----
-This is a notes page for future me 
-
-
-
-
-
-
-TODO:
-- Make sure sitemap has links to all pages
-- update download links with files once they're done
-    - Risk + Req may need updates
-- Gantt chart updates
-
+- Run `bundle exec jekyll serve` in the terminal (in the /docs file) to run site locally, then go to localhost:4000 to see

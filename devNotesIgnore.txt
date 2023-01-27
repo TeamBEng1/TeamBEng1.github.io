@@ -1,0 +1,3 @@
+TODO:
+- Make sure sitemap has links to all pages
+- update download links with files once they're done

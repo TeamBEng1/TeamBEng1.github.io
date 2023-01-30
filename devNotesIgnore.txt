@@ -2,3 +2,4 @@ TODO:
 - Make sure sitemap has links to all pages
 - update download links with files once they're done
     - Most recent files uploaded at 14:29, 30/01/2023
+- Add .jar file

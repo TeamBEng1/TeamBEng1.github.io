@@ -13,6 +13,7 @@ To edit this site, simply make a new .html file in /docs.
 At the very top, before any HTML, include the lines:
 ```--- 
 layout: default 
-name: [pagename] 
+title: [pagename] 
 ---
 ```
+This makes sure the Jekyll theme will work

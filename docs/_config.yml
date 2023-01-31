@@ -26,8 +26,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://github.com/TeamBEng1/PiazzaPanic.git" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  shella688
 github:
-  repository_url: "https://github.com/TeamBEng1/PiazzaPanic"
-  zip_url: "https://github.com/TeamBEng1/PiazzaPanic/archive/refs/heads/main.zip"
+  repository_url: "https://github.com/MWaq2803/PiazzaPanic"
+  zip_url: "https://github.com/MWaq2803/PiazzaPanic/archive/refs/heads/master.zip"
+  
 show_downloads: true
 
 # Build settings

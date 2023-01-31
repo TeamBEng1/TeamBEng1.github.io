@@ -1,0 +1,212 @@
+@startuml
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class B2WorldCreator {
+  + B2WorldCreator(MyScreen): 
+  - createMethod(TiledMap, int): Polygon?
+  - createWalls(TiledMap, World, BodyDef, PolygonShape, FixtureDef, Body): void
+  - createMethod1(TiledMap, int): Rectangle?
+}
+class Buns {
+  + Buns(MyScreen, Polygon): 
+}
+class Cook {
+  + Cook(MyScreen): 
+  + removeFromInventory(): void
+  + update(float): void
+  + defineCook(): void
+  + addToInventory(String): void
+   ingredients: String
+}
+class Counter {
+  + Counter(MyScreen, Rectangle): 
+}
+class Customer {
+  + Customer(PlayScreen, float, float): 
+  # defineNPC(): void
+  + update(float): void
+  + draw(Batch): void
+  + OrderFulfilled(): void
+  + MakingOrder(): void
+}
+class CuttingScreen {
+  + CuttingScreen(PiazzaPanic, Stage): 
+  - map: TiledMap
+  - world: World
+  + hide(): void
+  + resize(int, int): void
+  + show(): void
+  + update(float): void
+  + resume(): void
+  + dispose(): void
+  + render(float): void
+  + pause(): void
+   world: World
+   map: TiledMap
+}
+class CuttingStation {
+  + CuttingStation(MyScreen, Rectangle): 
+}
+class FryingScreen {
+  + FryingScreen(PiazzaPanic, Stage): 
+  - world: World
+  - map: TiledMap
+  + dispose(): void
+  + pause(): void
+  + render(float): void
+  + hide(): void
+  + show(): void
+  + resize(int, int): void
+  + update(float): void
+  + resume(): void
+   world: World
+   map: TiledMap
+}
+class FryingStation {
+  + FryingStation(MyScreen, Rectangle): 
+}
+class Hud {
+  + Hud(SpriteBatch): 
+  + dispose(): void
+  + update(float): void
+}
+class HudButton {
+  + HudButton(SpriteBatch, PiazzaPanic): 
+  + update(float): void
+  + draw(): void
+  + dispose(): void
+}
+class InteractiveTileObject {
+  + InteractiveTileObject(MyScreen, Rectangle): 
+}
+class Knife {
+  + Knife(MyScreen, Polygon): 
+}
+class Lettuce {
+  + Lettuce(MyScreen, Polygon): 
+}
+class MainMenuScreen {
+  + MainMenuScreen(PiazzaPanic): 
+  + resize(int, int): void
+  + pause(): void
+  + hide(): void
+  + show(): void
+  + render(float): void
+  + resume(): void
+  + dispose(): void
+}
+class MyScreen {
+  + MyScreen(PiazzaPanic, Stage): 
+  + resize(int, int): void
+   world: World
+   map: TiledMap
+}
+class NPC {
+  + NPC(PlayScreen, float, float): 
+  # defineNPC(): void
+}
+class Onion {
+  + Onion(MyScreen, Polygon): 
+}
+class Pan {
+  + Pan(MyScreen, Polygon): 
+}
+class Pantry {
+  + Pantry(MyScreen, Rectangle): 
+}
+class PantryScreen {
+  + PantryScreen(PiazzaPanic, Stage): 
+  - world: World
+  - map: TiledMap
+  + dispose(): void
+  + resize(int, int): void
+  + update(float): void
+  + pause(): void
+  + handleInput(float, Cook): void
+  + hide(): void
+  + render(float): void
+  + resume(): void
+  + show(): void
+   world: World
+   map: TiledMap
+}
+class Patty {
+  + Patty(MyScreen, Polygon): 
+}
+class PiazzaPanic {
+  + PiazzaPanic(): 
+  + create(): void
+  + render(): void
+  + dispose(): void
+}
+class Plate {
+  + Plate(MyScreen, Polygon): 
+}
+class PlayScreen {
+  + PlayScreen(PiazzaPanic, Stage): 
+  - map: TiledMap
+  - world: World
+  + render(float): void
+  + update(float): void
+  + pause(): void
+  + resize(int, int): void
+  + show(): void
+  + resume(): void
+  + handleInput(float): void
+  + hide(): void
+  + dispose(): void
+   world: World
+   map: TiledMap
+}
+class ServingScreen {
+  + ServingScreen(PiazzaPanic, Stage): 
+  - map: TiledMap
+  - world: World
+  + update(float): void
+  + resize(int, int): void
+  + render(float): void
+  + pause(): void
+  + show(): void
+  + dispose(): void
+  + hide(): void
+  + resume(): void
+   world: World
+   map: TiledMap
+}
+class ServingStation {
+  + ServingStation(MyScreen, Rectangle): 
+}
+class Tomato {
+  + Tomato(MyScreen, Polygon): 
+}
+class WorldContactListener {
+  + WorldContactListener(PiazzaPanic, Stage, Cook): 
+  + beginContact(Contact): void
+  + postSolve(Contact, ContactImpulse): void
+  + preSolve(Contact, Manifold): void
+  + endContact(Contact): void
+}
+
+Buns                   -[#000082,plain]-^  InteractiveTileObject 
+Counter                -[#000082,plain]-^  InteractiveTileObject 
+Customer               -[#000082,plain]-^  NPC                   
+CuttingScreen          -[#000082,plain]-^  MyScreen              
+CuttingStation         -[#000082,plain]-^  InteractiveTileObject 
+FryingScreen           -[#000082,plain]-^  MyScreen              
+FryingStation          -[#000082,plain]-^  InteractiveTileObject 
+Knife                  -[#000082,plain]-^  InteractiveTileObject 
+Lettuce                -[#000082,plain]-^  InteractiveTileObject 
+Onion                  -[#000082,plain]-^  InteractiveTileObject 
+Pan                    -[#000082,plain]-^  InteractiveTileObject 
+Pantry                 -[#000082,plain]-^  InteractiveTileObject 
+PantryScreen           -[#000082,plain]-^  MyScreen              
+Patty                  -[#000082,plain]-^  InteractiveTileObject 
+Plate                  -[#000082,plain]-^  InteractiveTileObject 
+PlayScreen             -[#000082,plain]-^  MyScreen              
+ServingScreen          -[#000082,plain]-^  MyScreen              
+ServingStation         -[#000082,plain]-^  InteractiveTileObject 
+Tomato                 -[#000082,plain]-^  InteractiveTileObject 
+@enduml
